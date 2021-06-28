@@ -96,7 +96,7 @@ const employeeChoice = () => {
 
 const initProfile = () => {
   const htmlPageContent = profileTemplate(employees);
-  fs.writeFile("./dist/Sample-Team-Profile.html", htmlPageContent, (err) =>
+  fs.writeFile("./dist/team.html", htmlPageContent, (err) =>
     err ? console.log(err) : console.log("Successfully created Profile!")
   );
 };
