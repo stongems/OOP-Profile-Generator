@@ -3,7 +3,7 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const fs = require("fs");
-const profileTemplate = require("./src/profile-template");
+const profileTemplate = require("./src/template");
 
 const employees = [];
 
@@ -12,7 +12,7 @@ const init = () => {
     .prompt({
       type: "list",
       name: "startup",
-      message: "To start buliding your team profile, choice a role",
+      message: "To start building your team profile, choice a role",
       choices: ["Manager", "Engineer", "Intern", "Exit"],
     })
 
@@ -89,12 +89,12 @@ const employeeChoice = () => {
           initManager();
           break;
         default:
-          initprofile();
+          initProfile();
       }
     });
 };
 
-const initprofile = () => {
+const initProfile = () => {
   const htmlPageContent = profileTemplate(employees);
   fs.writeFile("./dist/Sample-Team-Profile.html", htmlPageContent, (err) =>
     err ? console.log(err) : console.log("Successfully created Profile!")
