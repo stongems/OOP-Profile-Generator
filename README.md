@@ -20,9 +20,9 @@ To contribute to this repo, please contact me on GITHUB or by email (Link below)
 
 ## Demo Video
 
-![Application Demo](./TeamProfileDemo.gif)
+<img src="./img/OOP Team Generator.gif"/>
 
-Use the following [link](https://drive.google.com) to watch the full length video.
+Use the following [link](https://drive.google.com/file/d/1JP8KJtM6nXlURz8W61YsynDFLAn80sLf/preview) to watch the full length video.
 
 
 ## Questions
