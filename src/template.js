@@ -8,9 +8,7 @@ const profileTemplate = (employees) => {
           <div class="card mt-5" style="width: 18rem;">
               <div class="card-body bg-primary text-white">
                 <h5 class="card-title">${employees[i].name}</h5>
-                <p class="card-text"><i class="fas fa-mug-hot "></i> <span>${employees[
-                  i
-                ].getRole()}</span></p>
+                <p class="card-text"><i class="fas fa-mug-hot "></i> <span>${employees[i].getRole()}</span></p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employees[i].id}</li>
