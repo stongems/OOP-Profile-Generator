@@ -44,11 +44,27 @@ const profileTemplate = (employees) => {
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${employees[i].id}</li>
-                  <li class="list-group-item">Email: ${employees[i].email}</li>
+                  <li class="list-group-item">Email: <a href="mailto:${employees[i].email}"> ${employees[i].email}<a/></li>
                   <li class="list-group-item">School: ${employees[i].school}</li>
                 </ul>
               </div>
-        </div>`;
+        </div>
+          <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title"></p>
+              <p class="subtitle"></p>
+              <div class="content"></div>
+              <ul>
+                <li>Email: </li>
+                <li>ID: </li>
+                <li>School: </li>    
+              </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>`;
           break;
         default:
           return;
