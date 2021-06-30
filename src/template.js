@@ -28,8 +28,8 @@ const profileTemplate = (employees) => {
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${employees[i].id}</li>
-                  <li class="list-group-item">Email: ${employees[i].email}/li>
-                  <li class="list-group-item">Github: ${employees[i].github}</li>
+                  <li class="list-group-item">Email: <a href="${employees[i].email}"></a>${employees[i].email}</li>
+                  <li class="list-group-item">Github: <a href=https://github.com/${employees[i].github}>${employees[i].github}</li>
                 </ul>
               </div>
         </div>`;
@@ -44,7 +44,7 @@ const profileTemplate = (employees) => {
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${employees[i].id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${employees[i].email}"> ${employees[i].email}<a/></li>
+                  <li class="list-group-item">Email: <a href="mailto:${employees[i].email}""> ${employees[i].email}<a/></li>
                   <li class="list-group-item">School: ${employees[i].school}</li>
                 </ul>
               </div>

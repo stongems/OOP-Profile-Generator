@@ -52,7 +52,7 @@ const initManager = () => {
       },
       {
         name: "officeNumber",
-        message: "What is your manager's officeNumber?",
+        message: "What is your manager's office number?",
       },
     ])
     .then(function (manager) {
