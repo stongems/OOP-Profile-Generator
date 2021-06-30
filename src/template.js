@@ -1,76 +1,79 @@
 const profileTemplate = (employees) => {
-    let teamMember = "";
-    for (let i = 0; i < employees.length; i++) {
-      switch (employees[i].getRole()) {
-        case "Manager":
-          teamMember += `
+  let teamMember = "";
+  for (let i = 0; i < employees.length; i++) {
+    switch (employees[i].getRole()) {
+      case "Manager":
+        teamMember += `
           <div class="col">
           <div class="card mt-5" style="width: 18rem;">
               <div class="card-body bg-primary text-white">
                 <h5 class="card-title">${employees[i].name}</h5>
-                <p class="card-text"><i class="fas fa-mug-hot "></i> <span>${employees[i].getRole()}</span></p>
+                <p class="card-text"><i class="fas fa-mug-hot "></i> <span>${employees[
+                  i
+                ].getRole()}</span></p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID: ${employees[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${employees[i].email}">${employees[i].email}</a></li>
-                <li class="list-group-item">Office Number: ${employees[i].officeNumber}</li>
+                <li class="list-group-item">Email: <a href="mailto:${
+                  employees[i].email
+                }">${employees[i].email}</a></li>
+                <li class="list-group-item">Office Number: ${
+                  employees[i].officeNumber
+                }</li>
               </ul>
             </div>
       </div>`;
-          break;
-        case "Engineer":
-          teamMember += `
+        break;
+      case "Engineer":
+        teamMember += `
           <div class="col">
             <div class="card mt-5" style="width: 18rem;">
                 <div class="card-body bg-primary text-white">
                   <h5 class="card-title">${employees[i].name}</h5>
-                  <p class="card-text"><i class="fas fa-glasses"></i> <span>${employees[i].getRole()}</span></p>
+                  <p class="card-text"><i class="fas fa-glasses"></i> <span>${employees[
+                    i
+                  ].getRole()}</span></p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${employees[i].id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${employees[i].email}">${employees[i].email}</a></li>
-                  <li class="list-group-item">Github: <a href=https://github.com/${employees[i].github}target="_blank">${employees[i].github}</a></li>
+                  <li class="list-group-item">Email: <a href="mailto:${
+                    employees[i].email
+                  }">${employees[i].email}</a></li>
+                  <li class="list-group-item">Github: <a href="https://github.com/${
+                    employees[i].github
+                  }">${employees[i].github}</a></li>
                 </ul>
               </div>
         </div>`;
-          break;
-        case "Intern":
-          teamMember += `
+        break;
+      case "Intern":
+        teamMember += `
           <div class="col">
             <div class="card mt-5" style="width: 18rem;">
                 <div class="card-body bg-primary text-white">
                   <h5 class="card-title">${employees[i].name}</h5>
-                  <p class="card-text"><i class="fas fa-graduation-cap"></i> <span>${employees[i].getRole()}</span></p>
+                  <p class="card-text"><i class="fas fa-graduation-cap"></i> <span>${employees[
+                    i
+                  ].getRole()}</span></p>
                 </div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID: ${employees[i].id}</li>
-                  <li class="list-group-item">Email: <a href="mailto:${employees[i].email}"target="_blank">${employees[i].email}<a/></li>
-                  <li class="list-group-item">School: ${employees[i].school}</li>
+                  <li class="list-group-item">Email: <a href="mailto:${
+                    employees[i].email
+                  }">${employees[i].email}<a/></li>
+                  <li class="list-group-item">School: ${
+                    employees[i].school
+                  }</li>
                 </ul>
               </div>
         </div>
-          <div class="tile is-parent">
-          <article class="tile is-child notification is-success">
-            <div class="content">
-              <p class="title"></p>
-              <p class="subtitle"></p>
-              <div class="content"></div>
-              <ul>
-                <li>Email: </li>
-                <li>ID: </li>
-                <li>School: </li>    
-              </ul>
-              </div>
-            </div>
-          </article>
-        </div>
       </div>`;
-          break;
-        default:
-          return;
-      }
+        break;
+      default:
+        return;
     }
-    let body = `<!DOCTYPE html>
+  }
+  let body = `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -98,7 +101,6 @@ const profileTemplate = (employees) => {
       </body>
       </html>
       `;
-    return body;
-  };
-  module.exports = profileTemplate;
-  
+  return body;
+};
+module.exports = profileTemplate;
