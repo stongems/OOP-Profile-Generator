@@ -13,30 +13,30 @@ describe("Intern", () => {
     });
 
     it("should set the name property of the intern", () => {
-      //Arrange
+      //================================================== Arrange
       const intern = new Intern("Jill", "Jillybean@gmail.com", 254, "UofA");
-      //Assert
+      //=================================================== Assert
       expect(intern.name).toBe("Jill");
     });
 
     it("should set the email property of the intern", () => {
-      //Arrange
+      //================================================== Arrange
       const intern = new Intern("Jill", "Jillybean@gmail.com", 254, "UofA");
-      //Assert
+      //=================================================== Assert
       expect(intern.email).toBe("Jillybean@gmail.com");
     });
 
     it("should set the ID property of the intern", () => {
-      //Arrange
+      //=================================================== Arrange
       const intern = new Intern("Jill", "Jillybean@gmail.com", 254, "UofA");
-      //Assert
+      //==================================================== Assert
       expect(intern.id).toBe(254);
     });
 
     it("should set the school property of the intern", () => {
         //Arrange
         const intern = new Intern("Jill", "Jillybean@gmail.com", 254, "UofA");
-        //Assert
+        //================================================== Assert
         expect(intern.school).toBe("UofA");
     });
   });
