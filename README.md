@@ -14,10 +14,6 @@ This application creates a Team Profile html file.  This is a node.js command-li
 To use this application, fork entire repository. Install dependencies inquirer (command npm i inquirer) and jest(command npm i jest-D). Note: This application requires the installation of both node.js and npm.
 
 
-## Contributing
-To contribute to this repo, please contact me on GITHUB or by email (Link below).
-
-
 ## Demo Video
 
 <img src="./img/OOP Team Generator.gif"/>
